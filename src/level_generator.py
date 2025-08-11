@@ -21,7 +21,7 @@ class LevelGenerator:
         # Apply the 3rd rule based on level (randomly chosen from pool)
         current_rule = self._get_rule_for_level(level)
         
-        # Add all required tiles (ignore door_pos for now since we'll find it later)
+        # Add the rest of tiles 
         self._add_walls(player_pos)
         self._add_teleporters(player_pos)
         self._add_speed_boosts(player_pos)
@@ -56,7 +56,7 @@ class LevelGenerator:
             RuleType.DOOR_CHANGES_POSITION,
             RuleType.TILES_TURN_RED
         ]
-        # Use level number as seed for consistent rule per level
+        
         random.seed(level)
         return random.choice(rules)
     
@@ -110,4 +110,5 @@ class LevelGenerator:
             x, y = random.randint(0, TILE_WIDTH-1), random.randint(0, TILE_HEIGHT-1)
             if [x, y] != player_pos and self.grid[y][x] == TILE_EMPTY:
                 self.red_tiles.append([x, y])
+
                 self.grid[y][x] = TILE_RED 

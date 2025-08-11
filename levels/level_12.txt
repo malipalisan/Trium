@@ -1,0 +1,12 @@
+..WR.SW.R
+.W..R...R
+..W..R.TR
+..S..S..R
+..WTS.W.S
+..RW.W.RS
+WWW....RR
+.....RS.W
+WW....T..
+.RWTTRRT.
+0,0
+9,9

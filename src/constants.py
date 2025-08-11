@@ -1,0 +1,63 @@
+# Game Constants
+
+# Window and Display
+WINDOW_WIDTH = 1280
+WINDOW_HEIGHT = 920
+TILE_SIZE = 60
+TILE_WIDTH = 10  # Changed to 10x10 grid
+TILE_HEIGHT = 10
+PLAYER_SIZE = 55
+DOOR_SIZE = 55
+
+# Grid Layout (calculated from tile dimensions)
+GRID_WIDTH = TILE_WIDTH * TILE_SIZE
+GRID_HEIGHT = TILE_HEIGHT * TILE_SIZE
+GRID_X = (WINDOW_WIDTH - GRID_WIDTH) // 2
+GRID_Y = (WINDOW_HEIGHT - GRID_HEIGHT) // 2
+
+# Colors
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+GRAY = (128, 128, 128)
+GREEN = (0, 255, 0)
+RED = (255, 0, 0)
+BLUE = (0, 0, 255)
+YELLOW = (255, 255, 0)
+PURPLE = (128, 0, 128)
+ORANGE = (255, 165, 0)
+BROWN = (139, 69, 19)
+LIGHT_BLUE = (173, 216, 230)
+CYAN = (0, 255, 255)
+
+# Game Settings
+MAX_MOVES = 100  # Changed to 100 moves per level
+FPS = 60
+MAX_LEVELS = 12  # Added max levels constant
+
+# Tile Types (updated for new requirements)
+TILE_EMPTY = 0
+TILE_WALL = 1
+TILE_TELEPORTER = 2
+TILE_SPEED_BOOST = 3
+TILE_RED = 4
+TILE_DOOR = 5
+
+# Sprite Types
+SPRITE_PLAYER = "player"
+SPRITE_DOOR = "door"
+SPRITE_WALL = "wall"
+SPRITE_TELEPORTER = "teleporter"
+SPRITE_SPEED_BOOST = "speed_boost"
+SPRITE_RED = "red"
+SPRITE_EMPTY = "empty"
+
+# Level Generation Settings
+MIN_WALLS = 10
+MAX_WALLS = 15
+MIN_TELEPORTERS = 4
+MAX_TELEPORTERS = 8
+MIN_SPEED_BOOSTS = 5
+MAX_SPEED_BOOSTS = 7
+MIN_RED_TILES = 10
+MAX_RED_TILES = 15
+DOOR_MIN_COORD = 5  # Door coordinates cannot be less than 5 

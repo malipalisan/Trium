@@ -9,7 +9,7 @@ TILE_HEIGHT = 10
 PLAYER_SIZE = 55
 DOOR_SIZE = 55
 
-# Grid Layout (calculated from tile dimensions)
+# Grid Layout
 GRID_WIDTH = TILE_WIDTH * TILE_SIZE
 GRID_HEIGHT = TILE_HEIGHT * TILE_SIZE
 GRID_X = (WINDOW_WIDTH - GRID_WIDTH) // 2
@@ -62,3 +62,4 @@ MIN_RED_TILES = 10
 MAX_RED_TILES = 15
 
 DOOR_MIN_COORD = 5  
+

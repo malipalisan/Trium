@@ -4,7 +4,7 @@
 WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 920
 TILE_SIZE = 60
-TILE_WIDTH = 10  # Changed to 10x10 grid
+TILE_WIDTH = 10  
 TILE_HEIGHT = 10
 PLAYER_SIZE = 55
 DOOR_SIZE = 55
@@ -30,11 +30,11 @@ LIGHT_BLUE = (173, 216, 230)
 CYAN = (0, 255, 255)
 
 # Game Settings
-MAX_MOVES = 100  # Changed to 100 moves per level
+MAX_MOVES = 100  
 FPS = 60
-MAX_LEVELS = 12  # Added max levels constant
+MAX_LEVELS = 12  
 
-# Tile Types (updated for new requirements)
+# Tile Types 
 TILE_EMPTY = 0
 TILE_WALL = 1
 TILE_TELEPORTER = 2
@@ -60,4 +60,5 @@ MIN_SPEED_BOOSTS = 5
 MAX_SPEED_BOOSTS = 7
 MIN_RED_TILES = 10
 MAX_RED_TILES = 15
-DOOR_MIN_COORD = 5  # Door coordinates cannot be less than 5 
+
+DOOR_MIN_COORD = 5  

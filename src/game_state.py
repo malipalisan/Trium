@@ -14,7 +14,7 @@ class GameState:
         self.player_pos = [0, 0]
         self.door_pos = [0, 0]
         self.grid = []
-        self.sprites = {}  # Dictionary to store all sprites
+        self.sprites = {}  
         self.current_rule = None
         self.teleporters = []
         self.speed_boosts = []
@@ -28,8 +28,8 @@ class GameState:
         self.max_moves = MAX_MOVES
         self.level_generator = LevelGenerator()
         self.level_loader = LevelLoader()
-        self.stepped_tiles = set()  # Track tiles player has stepped on
-        self.door_move_counter = 0  # Counter for door position changes
+        self.stepped_tiles = set() 
+        self.door_move_counter = 0  
         
     def generate_level(self):
         """Generate a new level with the current rules"""
@@ -70,7 +70,6 @@ class GameState:
         # Set player position (top-left)
         self.player_pos = [0, 0]
         
-        # Generate level data first (this will create the grid with tiles)
         level_data = self.level_generator.generate_level(self.level, self.player_pos)
         
         # Update game state with level data
@@ -90,7 +89,7 @@ class GameState:
         self.door_move_counter = 0
     
     def _get_rule_for_level(self, level: int) -> RuleType:
-        """Get the 3rd rule for the current level (randomly chosen from pool)"""
+        """Get the 3rd rule for the current level """
         rules = [
             RuleType.INVERTED_CONTROLS,
             RuleType.NO_LEFT_MOVEMENT,
@@ -242,7 +241,7 @@ class GameState:
     def _find_valid_door_position(self) -> List[int]:
         """Find a valid door position (empty tile)"""
         attempts = 0
-        max_attempts = 100  # Prevent infinite loops
+        max_attempts = 100 
         
         while attempts < max_attempts:
             pos = [
@@ -261,4 +260,5 @@ class GameState:
                     return pos
         
         # Fallback to a default position
+
         return [TILE_WIDTH-1, TILE_HEIGHT-1] 

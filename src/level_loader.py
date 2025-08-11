@@ -50,7 +50,7 @@ class LevelLoader:
         # Remove empty lines and strip whitespace
         lines = [line.strip() for line in lines if line.strip()]
         
-        if len(lines) < TILE_HEIGHT + 2:  # Minimum lines: grid + player + door
+        if len(lines) < TILE_HEIGHT + 2:  
             raise ValueError("Invalid level file format")
         
         # Parse grid (first TILE_HEIGHT lines)
@@ -207,4 +207,5 @@ class LevelLoader:
                         return [x2, y2]
             return [0, 0]  # Fallback
         
+
         return door_pos 

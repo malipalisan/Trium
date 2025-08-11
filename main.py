@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Puzzle Game - Main Entry Point
+Trium Puzzle Game - Main Entry Point
 
 A grid-based puzzle game where you navigate from the top-left corner 
 to a random exit door, with different rules changing every level.
@@ -22,3 +22,4 @@ def main():
 if __name__ == "__main__":
 
     main() 
+

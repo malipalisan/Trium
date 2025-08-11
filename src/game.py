@@ -7,7 +7,6 @@ from .input_handler import InputHandler
 from .renderer import Renderer
 
 class PuzzleGame:
-    """Main game class that orchestrates all components"""
     
     def __init__(self):
         pygame.init()
@@ -26,7 +25,6 @@ class PuzzleGame:
         self.player.reset()
     
     def run(self):
-        """Main game loop"""
         running = True
         
         while running:
@@ -95,4 +93,5 @@ class PuzzleGame:
     def _cleanup(self):
         """Clean up pygame resources"""
         pygame.quit()
+
         sys.exit() 

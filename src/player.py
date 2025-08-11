@@ -8,10 +8,9 @@ class Player:
     def __init__(self):
         self.position = [0, 0]
         self.color = BLUE
-        self.colors = [BLUE, RED, GREEN, YELLOW, PURPLE, ORANGE]
     
     def reset(self):
-        """Reset player to starting position and color"""
+        """Reset player to starting position"""
         self.position = [0, 0]
         self.color = BLUE
     
@@ -85,4 +84,5 @@ class Player:
     
     def get_color(self) -> Tuple[int, int, int]:
         """Get current player color"""
+
         return self.color 

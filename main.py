@@ -3,7 +3,7 @@
 Puzzle Game - Main Entry Point
 
 A grid-based puzzle game where you navigate from the top-left corner 
-to a random exit door, with different rules changing every 3 levels.
+to a random exit door, with different rules changing every level.
 """
 
 from src.game import PuzzleGame
@@ -20,4 +20,5 @@ def main():
         raise
 
 if __name__ == "__main__":
+
     main() 
